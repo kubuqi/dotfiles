@@ -1,0 +1,439 @@
+#############################################
+# Place at $HOME/.fvwm/.fvwm2rc
+# or u /etc/system.fvwm2rc
+#
+############################################
+# 1.DeskTop
+############################################
+
+# 1.1 Title 
+# ------------------
+TitleStyle Height 18
+#TitleStyle (VGradient 128 2 royalblue1 50 royalblue3 50 royalblue4)
+#AddTitleStyle ActiveDown (VGradient 128 2 royalblue3 50 royalblue1 50 royalblue4)
+#TitleStyle Inactive (VGradient 128 2 grey85 50 grey70 50 grey50) -- Flat
+TitleStyle (VGradient 128 2 grey85 50 grey70 50 grey50)
+TitleStyle Inactive (VGradient 128 2 grey50 50 grey35 50 grey20) -- Flat
+
+
+# 1.2 Botton 
+# ------------
+#boutton 1 : menu
+ButtonStyle 1 (VGradient 128 2 grey85 50 grey70 50 grey50)-- Flat
+ButtonStyle 1 Inactive (VGradient 128 2 grey50 50 grey35 50 grey20) -- Flat
+AddButtonStyle 1 Inactive (8 01x50@0 50x99@0 99x50@0 80x50@0 80x01@0 20x01@0 20x50@0 01x50@0) -- Flat
+AddButtonStyle 1 ActiveUp (8 01x50@1 50x99@01 99x50@0 80x50@0 80x01@0 20x01@1 20x50@1 01x50@1) -- Flat
+AddButtonStyle 1 ActiveDown (VGradient 128 2 royalblue3 50 royalblue1 50 royalblue4 8 01x50@1 50x99@1 99x50@1 80x50@1 80x01@1 20x01@1 20x50@1 01x50@1) -- Flat
+
+# boutton 2 : (un)stick
+ButtonStyle 3 (VGradient 128 2 grey85 50 grey70 50 grey50)-- Flat
+ButtonStyle 3 Inactive (VGradient 128 2 grey50 50 grey35 50 grey20) -- Flat
+AddButtonStyle 3 ActiveUp (7 70x15@0 30x55@1 50x55@0 40x85@1 80x45@0 60x45@1 70x15@0) -- Flat
+AddButtonStyle 3 Inactive (7 70x15@0 30x55@1 50x55@0 40x85@1 80x45@0 60x45@1 70x15@0) -- Flat
+AddButtonStyle 3 ActiveDown (VGradient 128 2 royalblue3 50 royalblue1 50 royalblue4 7 70x15@0 30x55@1 50x55@0 40x85@1 80x45@0 60x45@1 70x15@0) -- Flat
+
+# boutton 3: close
+ButtonStyle 2 (VGradient 128 2 grey85 50 grey70 50 grey50)-- Flat
+ButtonStyle 2 Inactive (VGradient 128 2 grey50 50 grey35 50 grey20) -- Flat
+AddButtonStyle 2 ActiveUp (13 20x20@0 80x80@0 85x80@0 25x20@0 30x20@0 90x80@0 50x50@0 20x80@0 80x20@0 85x20@0 25x80@0 30x80@0 90x20@0) -- Flat
+AddButtonStyle 2 ActiveDown (VGradient 128 2 royalblue3 50 royalblue1 50 royalblue4 13 20x20@1 80x80@1 85x80@1 25x20@1 30x20@1 90x80@1 50x50@1 20x80@1 80x20@1 85x20@1 25x80@1 30x80@1 90x20@1) -- Flat
+AddButtonStyle 2 Inactive (13 20x20@0 80x80@0 85x80@0 25x20@0 30x20@0 90x80@0 50x50@0 20x80@0 80x20@0 85x20@0 25x80@0 30x80@0 90x20@0) -- Flat
+
+# boutton 4:  Maximize
+ButtonStyle 4 (VGradient 128 2 grey85 50 grey70 50 grey50)-- Flat
+ButtonStyle 4 Inactive (VGradient 128 2 grey50 50 grey35 50 grey20) -- Flat
+AddButtonStyle 4 ActiveUp (7 20x20@0 90x20@0 90x25@0 20x25@0 20x80@0 90x80@0 90x20@0) -- Flat
+AddButtonStyle 4 ActiveDown (VGradient 128 2 royalblue3 50 royalblue1 50 royalblue4 7 20x20@1 90x20@1 90x25@1 20x25@1 20x80@1 90x80@1 90x20@1) -- Flat
+AddButtonStyle 4 Inactive (7 20x20@0 90x20@0 90x25@0 20x25@0 20x80@0 90x80@0 90x20@0) -- Flat
+
+# boutton 5:minimize
+ButtonStyle 6 (VGradient 128 2 grey85 50 grey70 50 grey50)-- Flat
+ButtonStyle 6 Inactive (VGradient 128 2 grey50 50 grey35 50 grey20) -- Flat
+AddButtonStyle 6 ActiveUp (4 25x80@0 85x80@0 85x75@0 25x75@0 25x70@0 85x70@0) -- Flat
+AddButtonStyle 6 ActiveDown (VGradient 128 2 royalblue3 50 royalblue1 50 royalblue4 4 25x80@1 85x80@1 85x75@1 25x75@1 25x70@1 85x70@1) -- Flat
+AddButtonStyle 6 Inactive (4 25x80@0 85x80@0 85x75@0 25x75@0 25x70@0 85x70@0) -- Flat
+
+
+# 1.3 Menu 
+# --------------
+MenuStyle * Foreground grey90
+#MenuStyle * Background #1c5572
+MenuStyle * Background #4a708b
+MenuStyle * SeparatorsShort
+MenuStyle * Hilight3DOff, HilightBack #424164, ActiveFore white
+MenuStyle * TrianglesSolid
+MenuStyle * Font -*-*-medium-r-*-*-12-*-*-*-*-*-*-* fvwm, PopupOffset 1 90
+MenuStyle * MenuFace VGradient 128 1 #2c80A0 1 #1c5572
+
+########################################################
+# 2.Desktop
+########################################################
+# 2.1 MultiDesktop
+# ---------------------------
+DeskTopSize 6x1 
+EdgeResistance 100 10
+#EdgeScroll 100 100
+EdgeScroll 0 0
+
+# 2.2 Detail 
+# -----------------------
+ClickTime 750
+OpaqueMoveSize 150
+SnapAttraction  8 All Screen
+ColormapFocus FollowsMouse
+
+# 2.3 Other 
+# ---------------------------------------------
+Style "*"           Font -*-*-*-*-*-*-12-*-*-*-*-*-*-*
+Style "*"           IconFont -*-simsun-medium-r-*-*-12-*-*-*-*-*-*-*
+Style "*"           HilightFore White, HilightBack Black 
+Style "*"           BorderWidth 4, HandleWidth 4, DepressableBorder
+#Style "*"          Color black/#8090A0
+Style "*"           MWMFunctions, MWMDecor, HintOverride
+Style "*"           MWMBorder
+Style "*"           DecorateTransient, NoPPosition
+Style "*"           IconBox 1096 404 1152 -120
+Style "*"           SmartPlacement
+Style "*"               MouseFocusClickRaises
+Style "*"           WindowShadeShrinks, WindowShadeSteps 100
+#BorderStyle -- HiddenHandles NoInset
+
+# 2.4 Program
+# --------------------------  
+Style "Fvwm*"       NoTitle,  Sticky, WindowListSkip
+Style "Fvwm*"       CirculateSkipIcon, CirculateSkip
+Style "FvwmPager"   StaysOnTop, BorderWidth 0, HandleWidth 1
+Style "FvwmBanner"  StaysOnTop
+Style "FvwmButtons" NoTitle, WindowListSkip, Sticky
+                                                                                               Style "xclock*"     NoTitle,NoHandles,Sticky,WindowListSkip,StaysOnTop,BorderWidth 1, HandleWidth 1
+Style "xmms"        NoTitle, NoHandles, WindowListSkip, Sticky, ClickToFocus
+Style "xcalc"       RandomPlacement,ClickToFocus
+Style "xman"        RandomPlacement, ClickToFocus
+Style "rxvt"        NoTitle
+
+#####################################
+# 3. Command
+####################################
+
+# 3.1 Key 
+# -----------------------
+
+# some simple default key bindings:
+#Key Tab     A        M       MyTab
+#Key Tab     A        M2      MyTab
+Key Tab     A        C       MyTab2
+Key Tab     A        C2      MyTab2
+Key F2      A        M       Exec exec rxvt
+Key F3      A        M       Iconify
+Key F4      WTSFI    M       Close
+Key F4      WTSFI    M2      Close
+Key F3      A        M       Popup Window-Ops
+Key F3      A        M2      Popup Window-Ops
+Key F12     A        C       Quit
+Key F12     A        C2      Quit
+Key F12     A        M       Restart fvwm2
+Key F12     A        M2      Restart fvwm2
+Key F1      WTSFI    M       Maximize
+Key F1      WTSFI    M2      Maximize
+Key F1      WTSFI    C       MyIcon
+Key F1      WTSFI    C2      MyIcon
+#Key F11     A        M       Exec exec xscreensaver-command --lock
+Key Escape  A        C       WindowList Root c c
+Key Escape  A        C2      WindowList Root c c
+
+#Key F5  A A   HidePager
+#Key F6  A A   ShowPager
+
+Key 1 A M GotoPage 0 0
+Key 2 A M GotoPage 1 0
+Key 3 A M GotoPage 2 0
+Key 4 A M GotoPage 3 0
+Key 5 A M GotoPage 4 0
+Key 6 A M GotoPage 5 0
+Key 7 A M GotoPage 6 0
+Key 8 A M GotoPage 7 0
+
+
+
+#Mouse 3 A M MoveToDesk 1
+#Mouse 1 A M MoveToDesk -1
+
+# some simple default mouse bindings:
+# up and down
+Key Left    A        M       Scroll -100 +0
+Key Left    A        M2      Scroll -100 +0
+Key Right   A        M       Scroll +100 +0
+Key Right   A        M2      Scroll +100 +0
+Key Up      A        M       Scroll +0 -100
+Key Up      A        M2      Scroll +0 -100
+Key Down    A        M       Scroll +0 +100
+Key Down    A        M2      Scroll +0 +100
+
+Mouse 1 R       A       Menu RootMenu Nop
+Mouse 2 R       A       Menu Window-Ops Nop
+Mouse 3 R       A       WindowList
+
+Mouse 0 1       A       Menu Window-Ops2 Close
+Mouse 0 3       A       Stick
+Mouse 0 2       A       Close
+Mouse 0 4       A       Maximize
+Mouse 0 6       A       Iconify
+Mouse 1 F          A    Resize-or-Raise
+Mouse 1 TS         A    Move-or-Raise
+Mouse 1 I          A    Move-or-Iconify
+Mouse 2 I          A    Iconify
+Mouse 2 T          A    WindowShade
+Mouse 3 T          A    Raise-or-RaiseLower
+
+#   for other parts of the window/borders/icons:
+Mouse 1 TS      A       Move-or-Raise
+
+######################## Sample Functions ##########################
+DestroyFunc Move-or-Raise
+AddToFunc Move-or-Raise         "I" Raise
++                               "M" Move
++                               "D" WindowShade
+DestroyFunc Move-or-Raise2   
+AddToFunc Move-or-Raise2        "M" Raise
++                               "M" Move
++                               "D" Lower
+AddToFunc Maximize-Func         "M" Maximize     0 100
++                               "C" Maximize     0 80
++                               "D" Maximize     100 100
+AddToFunc Move-or-Iconify       "I" Raise
++                               "M" Move
++                               "D" Iconify
+AddToFunc Resize-or-Raise       "I" Raise
++                               "M" Resize
++                               "D" Lower
+AddToFunc Resize-or-Raise2      "M" Raise
++                               "M" Resize
++                               "D" Lower
+AddToFunc PrintFunction         "I" Raise
++                               "I" Exec xdpr -id $w
+AddToFunc PrintReverseFunction  "I" Raise
++                               "I" Exec xdpr 1/2 -h -rv -id $w
+AddToFunc Iconify-and-Raise     "I" Iconify
++                               "I" Raise
+#AddToFunc FocusAndWarp "I" FlipFocus
+#+                      "I" WarpToWindow 50 50
+AddToFunc DeiconifyFocusAndWarp "I" Iconify -1
++                               "I" FocusAndWarp
+AddToFunc ChangeDefaultFocus "I" Style "*" $0
++                            "I" Recapture
+#AddToFunc MyTab "I" Next [!Iconic] FocusAndWarp
+AddToFunc MyTab2 "I" Next [*] DeiconifyFocusAndWarp
+
+# run at fvwm starup
+DestroyFunc StartFunction
+AddToFunc StartFunction
+#+ I Module FvwmButtons MainPanel
++ I Module FvwmAuto 1500 Raise Nop
+#+ I Module FvwmAnimate
+#+ I Module FvwmTaskBar
+
+# InitProgram        
+DestroyFunc InitFunction     
+AddToFunc InitFunction
+#+ I Exec exec xscreensaver -no-splash 
++ I Exec exec xsetroot  -solid black
+#+ I Exec exec display -size 1024x768 -window root ~/.fvwm/images/SR71.jpg 
+#+ I Exec exec xclock -digital -fg white -bg SkyBlue4 -brief -update 60 
+#+ I Exec exec xclock -digit -fg white -bg black -update 1 -geometry 185x23-100-0
+#+ I Exec exec fcitx    
+
+# ExitProgram   
+DestroyFunc ExitFunction
+AddToFunc ExitFunction  
++ I All (xscreensaver) Close
+
+# 3.2 Modules   
+# --------------------------------
+AddToFunc InitFunction    "I" Module FvwmPager 0 0
+#                       + "I" Module FvwmButtons
+#                       + "I" Module FvwmButtons MainPanel
+AddToFunc RestartFunction "I" Module FvwmPager 0 0
+#                       + "I" Module FvwmButtons
+#                       + "I" Module FvwmButtons MainPanel
+
+# 3.3 Menu
+# --------
+AddToMenu RootMenu "Luke Zhang's FVWM Env%menu" Title
++                  "rxvt%menu"  Exec exec $HOME/local/bin/rxvt 
++          "rxvt-big%menu" Exec exec $HOME/local/bin/rxvt -geometry 95x74
+#+                 "mc%menu"    Exec exec rxvt -e mc 
++                  "xterm%menu" Exec exec xterm 
+#+                 "lock%menu"  Exec exec xscreensaver-command --lock
++               ""                              Nop
++               "Network%menu"  Popup Networkmenu 
++               "security%menu" Popup Securitymenu
++               "office%menu"   Popup Editmenu
++               "other%menu"    Popup Othermenu
++               "Fvwm%menu"     Popup Fvwmmenu 
++               ""                              Nop
++               "xkill%menu"    Exec exec xkill
++               "restart%menu"  Restart fvwm2
++               "exit%menu"     Quit
++               "reboot%menu"   Exec exec sudo /sbin/reboot 
++               "halt%menu"     Exec exec sudo /sbin/shutdown -h now
+
+AddToMenu Securitymenu  "Security%menu" Title
++                       "ethereal"      Exec exec sudo ethereal
++                       "nessus"        Exec exec nessus
++                       "gpa%menu"      Exec exec gpa 
+AddToMenu Editmenu      "Editing%menu"  Title
++                       "OpenOffice"    Exec exec ooffice
++                       "stardict%menu" Exec exec stardict 
++                       "gvim%menu"     Exec exec gvim
++                       "acroread%menu" Exec exec acroread 
++                       "xchm%menu"     Exec exec xchm
+AddToMenu Networkmenu   "Network%menu"  Title
++                       "gaim%menu"     Exec exec gaim 
++                       "putty%menu"    Exec exec putty
++                       "firefox%menu"  Exec exec mozilla-firefox 
++                       "sylpheed%menu" Exec exec sylpheed
++                       "800x600"       Exec exec rdesktop -u wlj -a 24 -g 800x600 192.168.100.254:3389
++                       "1024x768"      Exec exec rdesktop -u wlj -f -a 24 192.168.100.254:3389
+AddToMenu Othermenu     "Other%menu"    Title
++                       "xmms%menu"     Exec exec xmms
++                       "scrot%menu"    Exec exec scrot '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/images/shots/'
++                       "scrot 5%menu"  Exec exec scrot '%Y-%m-%d_$wx$h_scrot.png' -d 5 -e 'mv $f ~/images/shots/'
++                       "gqview%menu"   Exec exec gqview 
++                       "gimp%menu"     Exec exec gimp
++                       "mplayer%menu"  Exec exec gmplayer 
++                       "realplay%menu" Exec exec sudo /usr/local/Real/realplay 
+AddToMenu fvwmmenu      "Fvwm%menu"     Title
++                       "Fvwm Modules"  Popup Module-Popup
++                       "Fvwm Window Ops" Popup Window-Ops
++                       "Fvwm Simple Config Ops"  Popup Misc-Ops
++                       ""              Nop
++                       "Refresh Screen"   Refresh
++                       "Recapture Screen" Recapture
+
+AddToMenu Misc-Ops "Misc Config Opts" Title
++                  "Sloppy Focus"        ChangeDefaultFocus SloppyFocus
++                  "Click To Focus"      ChangeDefaultFocus ClickToFocus
++                  "Focus Follows Mouse" ChangeDefaultFocus FocusFollowsMouse
++                  "" Nop
++                  "OpaqueMove On"         OpaqueMoveSize 100
++                  "OpaqueMove Off"        OpaqueMoveSize 0
+#+                  "" Nop
+#+                  "Colormap Follows Mouse" ColormapFocus FollowsMouse
+#+                  "Colormap Follows Focus" ColormapFocus FollowsFocus
++                  "" Nop 
++                  "Full Paging ON"         EdgeScroll 100 100
++                  "All Paging OFF"         EdgeScroll 0 0
++                  "Horizontal Paging Only" EdgeScroll 100 0
++                  "Vertical Paging Only"   EdgeScroll 0 100
++                  "Partial Paging"         EdgeScroll 50 50
++                  "Full Paging && Edge Wrap" EdgeScroll 100000 100000
+
+AddToMenu Window-Ops    "&Move%menu%"   Move
++               "&Resize%menu"  Resize
++               "R&aise%menu"   Raise           
++               "&Lower%menu"   Lower           
++               "(De)Iconify%menu"      Iconify         
++               "(Un)Stick%menu"        Stick           
++               "(Un)Ma&ximize"                         Maximize
++                       ""              Nop             
++               "&Delete%menu"  Delete  
++               "&Close%menu"   Close
++               "Destroy%menu"  Destroy         
++                       ""              Nop
++                       "ScrollBar"     Module FvwmScroll 2 2   
++                       "Print"         PrintFunction
++           "Print Reverse" PrintReverseFunction
+
+AddToMenu Window-Ops2    "&Move%menu%"   Move
++               "&Resize%menu"  Resize
++               "R&aise%menu"   Raise   
++               "&Lower%menu"   Lower   
++               "(De)Iconify%menu"      Iconify
++               "(Un)Stick%menu"        Stick
++               "(Un)Ma&ximize"                         Maximize
++                       ""              Nop
++               "&Delete%menu"  Delete  
++               "&Close%menu"   Close
++               "Destroy%menu"  Destroy 
++                       ""              Nop
++                       "ScrollBar"     Module FvwmScroll 2 2
++                       "Print"         PrintFunction
++           "Print Reverse" PrintReverseFunction
+
+AddToMenu Module-Popup  "FvwmModules"   Title                                                  +                       "Identify"      Module  FvwmIdent
++                       "Talk"          Module  FvwmTalk
++                       ""              Nop
++                       "Button-Bar"    Module  FvwmButtons
++                       "Pager"         Module  FvwmPager 0 0                                  +                       "WinList"       Module  FvwmWinList
++                       ""              Nop                                                    +                       "Banner"        Module  FvwmBanner
++           "ScrollBar"     Module  FvwmScroll 50 50
++           "Background"        Module  FvwmBacker
++           "AutoRaise"     Module  FvwmAuto 200 Raise Nop
++           "Stop AutoRaise" KillModule FvwmAuto
++                       ""              Nop
++                       "IconBox"       Module  FvwmIconBox
++           "IconMan"       Module  FvwmIconMan
++                       ""              Nop 
++           "Form - Rlogin"      Module FvwmForm Rlogin
++           "Form - MyFvwmTalk"  Module FvwmForm MyFvwmTalk
++           "Form - QuitVerify"  Module FvwmForm QuitVerify
+
+########################################################
+# 4. Modules Detail
+########################################################
+
+########################## Window-Identifier ###############################
+# Just choose colors and a fonts
+########################## Window-Identifier ###############################
+# Just choose colors and a fonts
+*FvwmIdentBack #708090
+*FvwmIdentFore black
+*FvwmIdentFont -*-simsun-medium-r-*-*-14-*-*-*-*-*-*-*
+########################### Pager #########################################
+*FvwmPagerBack Black
+*FvwmPagerFore White
+# turn off desktop names for swallowing in above button bar example:
+*FvwmPagerFont none
+*FvwmPagerHilight grey50
+*FvwmPagerGeometry 150x25-0-0
+*FvwmPagerSmallFont -*-simsun-medium-r-*-*-12-*-*-*-*-*-*-*
+*FvwmPagerBalloons            All
+*FvwmPagerBalloonBack         #4a708b 
+#*FvwmPagerBalloonBack         #000000
+*FvwmPagerBalloonFore         white
+*FvwmPagerBalloonFont         -*-simsun-medium-r-*-*-12-*-*-*-*-*-*-*
+*FvwmPagerBalloonYOffset      +2
+*FvwmPagerBalloonBorderWidth  1
+*FvwmPagerBalloonBorderColor  Black
+
+##########################FvwmWinList##################################
+*FvwmWinListBack #403030
+*FvwmWinListFore White
+*FvwmWinListFont -*-simsun-medium-r-*-*-12-*-*-*-*-*-*-*
+*FvwmWinListAction Click1 Iconify -1,Focus
+*FvwmWinListAction Click2 Iconify
+*FvwmWinListAction Click3 Module "FvwmIdent" FvwmIdent
+*FvwmWinListUseSkipList
+*FvwmWinListGeometry +0-1
+*FvwmBackerDesk 0 -solid steelblue
+*FvwmBackerDesk 1 -solid midnightblue
+*FvwmScrollBack grey40
+*FvwmScrollFore green
+*FvwmBannerTimeout 4
+
+##########################FvwmButtons##################################
+*FvwmButtonsFore Black
+*FvwmButtonsBack #4a708b 
+*FvwmButtonsFont -*-simsun-medium-r-*-*-12-*-*-*-*-*-*-* 
+*FvwmButtonsGeometry +385+0
+*FvwmButtonsRows 1
+*FvwmButtons(Title term, Action 'Exec "" rxvt 
+*FvwmButtons(Title www, Action 'Exec "mozilla-firefox" mozilla-firefox -geometry 747x510+14+2 &')
+*FvwmButtons(Title mail, Action 'Exec "sylpheed" sylpheed &')
+*FvwmButtons(Title icq, Action 'Exec "gaim" gaim &')
+*FvwmButtons(Title xmms, Action 'Exec "xmms" xmms &')
+*FvwmButtons(Title lock, Action 'Exec "lock" xscreensaver-command --lock&')
+
+##########################FvwmTaskBar##################################
+#Style "FvwmTaskBar" NoTitle,Sticky,StaysOnTop,WindowListSkip,CirculateSkip
+#Read fvwm.strokes
