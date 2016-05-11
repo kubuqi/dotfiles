@@ -1,0 +1,9 @@
+! this is a comment
+
+*background:            DeepSkyBlue4
+*foreground:            White
+*scrollBar:             False
+xterm*scrollBar:        True
+*saveLines:             10000   
+
+! Mouse wheel support
